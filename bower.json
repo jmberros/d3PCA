@@ -1,0 +1,22 @@
+{
+  "name": "pcaD3",
+  "authors": [
+    "Juan Manuel Berros <juanmaberros@gmail.com>"
+  ],
+  "description": "A magical d3-based PCA plotter",
+  "main": "js/main.js",
+  "keywords": [
+    "pca",
+    "ancestry",
+    "genomics"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
