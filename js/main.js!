@@ -1,7 +1,0 @@
-require.config({
-    baseurl: "js/",
-    paths: {
-        d3: "vendor/d3.js",
-        pca: "pca.js",
-    },
-});
