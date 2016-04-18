@@ -109,14 +109,14 @@ function setScales(dataset) {
             return d[components[1]];
         }));
 
-    var population_on_the_left = xSamplesMedian < xDomainMean,
-        population_on_the_top  = ySamplesMedian > yDomainMean;
+    var population_in_the_left = xSamplesMedian < xDomainMean,
+        population_in_the_top  = ySamplesMedian < yDomainMean;  // ?
 
     var range = { x: [0, width], y: [0, height] }
-    if (!population_on_the_left) {
+    if (!population_in_the_left) {
         range["x"] = [width, 0];
     };
-    if (!population_on_the_top) {
+    if (!population_in_the_top) {
         range["y"] = [height, 0];
     };
 
@@ -163,6 +163,8 @@ function readCSVdrawPCA(filepath) {
 
 function showOptions() {
     var dataset_labels = [
+        "LEA.CPx100",
+        "LEA.CPx10",
         "LEA.GAL_Completo",
         "LEA.GAL_Affy",
         "LEA.100_SNPs_from_GAL_Affy",
